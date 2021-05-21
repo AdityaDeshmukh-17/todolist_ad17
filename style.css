@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background: #8383ff url("https://images.pexels.com/photos/2629233/pexels-photo-2629233.jpeg?auto=compress&cs=tinysrgb&h=1080&w=1920") no-repeat center center/cover;
+  /* Photo by Josh Hild from Pexels */
+  background-blend-mode: multiply;
+  font-family: "Love Ya Like A Sister", cursive;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+#tasklist {
+  max-width: 400px;
+  width: 100%;
+  background-color: rgba(131, 131, 255, 0.35);
+  padding: 1.5rem;
+}
+#tasklist h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding: 0.8rem;
+  background-color: rgba(131, 131, 255, 0.3);
+  border-radius: 0.5rem;
+  user-select: none;
+}
+#tasklist input {
+  max-width: 480px;
+  display: block;
+  margin: 0 auto 2rem;
+  font: inherit;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  border: 5px solid #9d9dff;
+}
+#tasklist input:hover, #tasklist input:focus {
+  border-color: #9090ff;
+}
+#tasklist .error {
+  padding: 0.8rem;
+  display: block;
+  color: red;
+  margin: -2rem 0 1rem;
+  text-align: center;
+  user-select: none;
+}
+#tasklist ul {
+  list-style: none;
+  padding: 0;
+  user-select: none;
+}
+#tasklist ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem;
+  background-color: rgba(131, 131, 255, 0.3);
+  box-shadow: 0px 0px 2px white;
+  border-radius: 0.3rem;
+}
+#tasklist ul li:hover {
+  box-shadow: 0px 0px 3px white;
+  background-color: rgba(131, 131, 255, 0.35);
+}
+#tasklist ul li h3 {
+  padding-right: 1rem;
+  max-width: calc(100% - 42px);
+  width: 100%;
+  word-break: break-word;
+}
+#tasklist ul li i {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.8rem;
+  background-color: rgba(131, 131, 255, 0.4);
+  box-shadow: 0px 0px 2px white;
+}
+#tasklist ul li i:hover {
+  background-color: rgba(131, 131, 255, 0.6);
+  box-shadow: 0px 0px 5px white;
+}
+#tasklist ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
